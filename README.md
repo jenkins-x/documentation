@@ -16,8 +16,6 @@ $ bundle exec jekyll serve
 
 ## Editing
 
-Edition is already optimised for adding, updating and removing documentation pages in CloudCannon.
-
 ### Documentation pages
 
 * Add, update or remove a documentation page in the *Documentation* collection.
