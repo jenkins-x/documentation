@@ -1,4 +1,4 @@
-# Edition
+# Jenkins X Documentation
 
 ## Develop
 
@@ -48,3 +48,7 @@ To build the container:
 To run the container:
 
     docker run -itd --name jenkinsxdocs --publish 8080:80 jenkinsx/docs
+
+# Credits
+
+Thank you to CloudCannon for [the template](https://github.com/CloudCannon/edition-jekyll-template) we are using for the Jenkins X documentation. You are awesome!
