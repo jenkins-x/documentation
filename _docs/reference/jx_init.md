@@ -20,11 +20,13 @@ jx init
 ### Options
 
 ```
-  -b, --batch-mode        In batch mode the command never prompts for user input
-  -d, --domain string     Domain to expose ingress endpoints.  Example: jenkinsx.io
-      --headless          Enable headless operation if using browser automation
-      --provider string   Cloud service providing the kubernetes cluster.  Supported providers: [minikube,gke,aks]
-      --verbose           Enable verbose logging
+  -b, --batch-mode          In batch mode the command never prompts for user input
+  -d, --domain string       Domain to expose ingress endpoints.  Example: jenkinsx.io
+      --draft-client-only   Only install draft client
+      --headless            Enable headless operation if using browser automation
+      --helm-client-only    Only install helm client
+      --provider string     Cloud service providing the kubernetes cluster.  Supported providers: [minikube,gke,aks]
+      --verbose             Enable verbose logging
 ```
 
 ### SEE ALSO

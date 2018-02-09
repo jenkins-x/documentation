@@ -14,22 +14,28 @@ jx promote [application]
 ### Examples
 
 ```
-  # Promote a version of an application to staging
-  jx promote myapp --version 1.2.3 --env staging
+  # Promote a version of the current application to staging
+  # discovering the application name from the source code
+  jx promote --version 1.2.3 --env staging
+  
+  # Promote a version of the myapp application to production
+  jx promote myapp --version 1.2.3 --env prod
 ```
 
 ### Options
 
 ```
-      --all-auto                Promote to all automatic environments in order
-  -a, --app string              The Application to promote
-  -e, --environment string      The Environment to promote to
-  -r, --helm-repo-name string   The name of the helm repository that contains the app (default "releases")
-  -u, --helm-repo-url string    The Helm Repository URL to use for the App (default "http://jenkins-x-chartmuseum:8080")
-  -n, --namespace string        The Namespace to promote to
-      --no-helm-update          Allows the 'helm repo update' command if you are sure your local helm cache is up to date with the version you wish to promote
-  -p, --preview                 Whether to create a new Preview environment for the app
-  -v, --version string          The Version to promote
+      --all-auto                        Promote to all automatic environments in order
+  -a, --app string                      The Application to promote
+  -e, --environment string              The Environment to promote to
+  -r, --helm-repo-name string           The name of the helm repository that contains the app (default "releases")
+  -u, --helm-repo-url string            The Helm Repository URL to use for the App (default "http://jenkins-x-chartmuseum:8080")
+  -n, --namespace string                The Namespace to promote to
+      --no-helm-update                  Allows the 'helm repo update' command if you are sure your local helm cache is up to date with the version you wish to promote
+  -p, --preview                         Whether to create a new Preview environment for the app
+      --pull-request-poll-time string   Poll time when waiting for a Pull Request to merge (default "20s")
+  -t, --timeout string                  The timeout to wait for the promotion to succeed in the underlying Environment. The command fails if the timeout is exceeded or the promotion does not complete
+  -v, --version string                  The Version to promote
 ```
 
 ### SEE ALSO
