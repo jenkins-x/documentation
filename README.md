@@ -36,7 +36,7 @@ Edition is already optimised for adding, updating and removing documentation pag
 
 * Change `site.show_full_navigation` to control all or only the current navigation group being open.
 
-# Docker
+## Docker
 
 The Dockerfile provided captures the static website generated in `/_site` and serves it using Nginx.
 
@@ -49,6 +49,6 @@ To run the container:
 
     docker run -itd --name jenkinsxdocs --publish 8080:80 jenkinsx/docs
 
-# Credits
+## Credits
 
 Thank you to CloudCannon for [the template](https://github.com/CloudCannon/edition-jekyll-template) we are using for the Jenkins X documentation. You are awesome!
