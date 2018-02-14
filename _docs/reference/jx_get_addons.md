@@ -1,21 +1,21 @@
-## jx get url
+## jx get addons
 
-Display one or many URLs
+Lists the addons
 
 ### Synopsis
 
 
-Display one or many URLs from the running services.
+Display the available addons
 
 ```
-jx get url [flags]
+jx get addons [flags]
 ```
 
 ### Examples
 
 ```
-  # List all URLs in this namespace
-  jx get url
+  # List all the possible addons
+  jx get addon
 ```
 
 ### SEE ALSO
