@@ -27,7 +27,7 @@ jx create cluster gke
   -b, --batch-mode                 In batch mode the command never prompts for user input
       --cluster-ipv4-cidr string   The IP address range for the pods in this cluster in CIDR notation (e.g. 10.0.0.0/14)
   -n, --cluster-name string        The name of this cluster, default is a random generated name
-  -v, --cluster-version string     The Kubernetes version to use for the master and nodes. Defaults to server-specified
+  -v, --cluster-version string     The Kubernetes version to use for the master and nodes. Defaults to server-specified (default "1.7.12-gke.1")
   -d, --disk-size string           Size in GB for node VM boot disks. Defaults to 100GB
       --enable-autoupgrade         Sets autoupgrade feature for a cluster's default node-pool(s)
       --git-api-token string       The git API token to use for creating new git repositories
