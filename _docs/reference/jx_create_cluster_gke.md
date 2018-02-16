@@ -24,24 +24,30 @@ jx create cluster gke
 ### Options
 
 ```
-  -b, --batch-mode                 In batch mode the command never prompts for user input
-      --cluster-ipv4-cidr string   The IP address range for the pods in this cluster in CIDR notation (e.g. 10.0.0.0/14)
-  -n, --cluster-name string        The name of this cluster, default is a random generated name
-  -v, --cluster-version string     The Kubernetes version to use for the master and nodes. Defaults to server-specified (default "1.7.12-gke.1")
-  -d, --disk-size string           Size in GB for node VM boot disks. Defaults to 100GB
-      --enable-autoupgrade         Sets autoupgrade feature for a cluster's default node-pool(s)
-      --git-api-token string       The git API token to use for creating new git repositories
-      --git-provider-url string    The git server URL to create new git repositories inside (default "github.com")
-      --git-username string        The git username to use for creating new git repositories
-      --headless                   Enable headless operation if using browser automation
-  -m, --machine-type string        The type of machine to use for nodes
-      --namespace string           The namespace the Jenkins X platform should be installed into (default "jx")
-      --no-brew                    Disables the use of brew on MacOS to install dependencies like kubectl, draft, helm etc
-      --num-nodes string           The number of nodes to be created in each of the cluster's zones
-  -p, --project-id string          Google Project ID to create cluster in
-      --skip-login                 Skip Google auth if already logged in via gloud auth
-      --verbose                    Enable verbose logging
-  -z, --zone string                The compute zone (e.g. us-central1-a) for the cluster
+  -b, --batch-mode                      In batch mode the command never prompts for user input
+      --cloud-environment-repo string   Cloud Environments git repo (default "https://github.com/jenkins-x/cloud-environments")
+      --cluster-ipv4-cidr string        The IP address range for the pods in this cluster in CIDR notation (e.g. 10.0.0.0/14)
+  -n, --cluster-name string             The name of this cluster, default is a random generated name
+  -v, --cluster-version string          The Kubernetes version to use for the master and nodes. Defaults to server-specified (default "1.7.12-gke.1")
+      --default-environments            Creates default Staging and Production environments (default true)
+  -d, --disk-size string                Size in GB for node VM boot disks. Defaults to 100GB
+      --domain string                   Domain to expose ingress endpoints.  Example: jenkinsx.io
+      --enable-autoupgrade              Sets autoupgrade feature for a cluster's default node-pool(s)
+      --git-api-token string            The git API token to use for creating new git repositories
+      --git-provider-url string         The git server URL to create new git repositories inside (default "github.com")
+      --git-username string             The git username to use for creating new git repositories
+      --headless                        Enable headless operation if using browser automation
+      --https                           Instructs Jenkins X to generate https not http Ingress rules
+      --local-helm-repo-name string     The name of the helm repository for the installed Chart Museum (default "releases")
+  -m, --machine-type string             The type of machine to use for nodes
+      --namespace string                The namespace the Jenkins X platform should be installed into (default "jx")
+      --no-brew                         Disables the use of brew on MacOS to install dependencies like kubectl, draft, helm etc
+      --num-nodes string                The number of nodes to be created in each of the cluster's zones
+  -p, --project-id string               Google Project ID to create cluster in
+      --provider string                 Cloud service providing the kubernetes cluster.  Supported providers: [minikube,gke,aks]
+      --skip-login                      Skip Google auth if already logged in via gloud auth
+      --verbose                         Enable verbose logging
+  -z, --zone string                     The compute zone (e.g. us-central1-a) for the cluster
 ```
 
 ### SEE ALSO

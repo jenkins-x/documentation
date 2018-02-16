@@ -26,16 +26,23 @@ jx create cluster aks
 ### Options
 
 ```
-  -v, --K8Version string             kubernetes version (default "1.8.2")
-  -k, --PathToPublicRSAKey string    pathToPublicRSAKey
-  -c, --clusterName string           Name of the cluster
-      --git-api-token string         The git API token to use for creating new git repositories
-      --git-provider-url string      The git server URL to create new git repositories inside (default "github.com")
-      --git-username string          The git username to use for creating new git repositories
-  -l, --location string              location to run cluster in (default "eastus")
-      --no-brew                      Disables the use of brew on MacOS to install dependencies like kubectl, draft, helm etc
-  -o, --nodes string                 node count (default "1")
-  -n, --resource group name string   Name of the resource group
+  -v, --K8Version string                kubernetes version (default "1.8.2")
+  -k, --PathToPublicRSAKey string       pathToPublicRSAKey
+      --cloud-environment-repo string   Cloud Environments git repo (default "https://github.com/jenkins-x/cloud-environments")
+  -c, --clusterName string              Name of the cluster
+      --default-environments            Creates default Staging and Production environments (default true)
+      --domain string                   Domain to expose ingress endpoints.  Example: jenkinsx.io
+      --git-api-token string            The git API token to use for creating new git repositories
+      --git-provider-url string         The git server URL to create new git repositories inside (default "github.com")
+      --git-username string             The git username to use for creating new git repositories
+      --https                           Instructs Jenkins X to generate https not http Ingress rules
+      --local-helm-repo-name string     The name of the helm repository for the installed Chart Museum (default "releases")
+  -l, --location string                 location to run cluster in (default "eastus")
+      --namespace string                The namespace the Jenkins X platform should be installed into (default "jx")
+      --no-brew                         Disables the use of brew on MacOS to install dependencies like kubectl, draft, helm etc
+  -o, --nodes string                    node count (default "1")
+      --provider string                 Cloud service providing the kubernetes cluster.  Supported providers: [minikube,gke,aks]
+  -n, --resource group name string      Name of the resource group
 ```
 
 ### SEE ALSO

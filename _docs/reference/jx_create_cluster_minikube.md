@@ -22,18 +22,24 @@ jx create cluster minikube
 ### Options
 
 ```
-  -b, --batch-mode                     In batch mode the command never prompts for user input
-  -c, --cpu string                     Number of CPUs allocated to the minikube VM (default "3")
-      --git-api-token string           The git API token to use for creating new git repositories
-      --git-provider-url string        The git server URL to create new git repositories inside (default "github.com")
-      --git-username string            The git username to use for creating new git repositories
-      --headless                       Enable headless operation if using browser automation
-  -v, --hyperv-virtual-switch string   Additional options for using HyperV with minikube
-  -m, --memory string                  Amount of RAM allocated to the minikube VM in MB (default "4096")
-      --namespace string               The namespace the Jenkins X platform should be installed into (default "jx")
-      --no-brew                        Disables the use of brew on MacOS to install dependencies like kubectl, draft, helm etc
-      --verbose                        Enable verbose logging
-  -d, --vm-driver string               VM driver is one of: [virtualbox xhyve vmwarefusion hyperkit]
+  -b, --batch-mode                      In batch mode the command never prompts for user input
+      --cloud-environment-repo string   Cloud Environments git repo (default "https://github.com/jenkins-x/cloud-environments")
+  -c, --cpu string                      Number of CPUs allocated to the minikube VM (default "3")
+      --default-environments            Creates default Staging and Production environments (default true)
+      --domain string                   Domain to expose ingress endpoints.  Example: jenkinsx.io
+      --git-api-token string            The git API token to use for creating new git repositories
+      --git-provider-url string         The git server URL to create new git repositories inside (default "github.com")
+      --git-username string             The git username to use for creating new git repositories
+      --headless                        Enable headless operation if using browser automation
+      --https                           Instructs Jenkins X to generate https not http Ingress rules
+  -v, --hyperv-virtual-switch string    Additional options for using HyperV with minikube
+      --local-helm-repo-name string     The name of the helm repository for the installed Chart Museum (default "releases")
+  -m, --memory string                   Amount of RAM allocated to the minikube VM in MB (default "4096")
+      --namespace string                The namespace the Jenkins X platform should be installed into (default "jx")
+      --no-brew                         Disables the use of brew on MacOS to install dependencies like kubectl, draft, helm etc
+      --provider string                 Cloud service providing the kubernetes cluster.  Supported providers: [minikube,gke,aks]
+      --verbose                         Enable verbose logging
+  -d, --vm-driver string                VM driver is one of: [virtualbox xhyve vmwarefusion hyperkit]
 ```
 
 ### SEE ALSO

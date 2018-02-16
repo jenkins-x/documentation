@@ -27,14 +27,16 @@ jx install [flags]
 
 ```
   -b, --batch-mode                      In batch mode the command never prompts for user input
-  -c, --cloud-environment-repo string   Cloud Environments git repo (default "https://github.com/jenkins-x/cloud-environments")
-  -d, --domain string                   Domain to expose ingress endpoints.  Example: jenkinsx.io
+      --cloud-environment-repo string   Cloud Environments git repo (default "https://github.com/jenkins-x/cloud-environments")
+      --default-environments            Creates default Staging and Production environments (default true)
+      --domain string                   Domain to expose ingress endpoints.  Example: jenkinsx.io
       --git-api-token string            The git API token to use for creating new git repositories
       --git-provider-url string         The git server URL to create new git repositories inside (default "github.com")
       --git-username string             The git username to use for creating new git repositories
       --headless                        Enable headless operation if using browser automation
       --https                           Instructs Jenkins X to generate https not http Ingress rules
       --local-helm-repo-name string     The name of the helm repository for the installed Chart Museum (default "releases")
+      --namespace string                The namespace the Jenkins X platform should be installed into (default "jx")
       --provider string                 Cloud service providing the kubernetes cluster.  Supported providers: [minikube,gke,aks]
       --verbose                         Enable verbose logging
 ```

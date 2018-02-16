@@ -27,7 +27,9 @@ jx promote [application]
 ```
       --all-auto                        Promote to all automatic environments in order
   -a, --app string                      The Application to promote
+  -b, --batch-mode                      In batch mode the command never prompts for user input
   -e, --environment string              The Environment to promote to
+      --headless                        Enable headless operation if using browser automation
   -r, --helm-repo-name string           The name of the helm repository that contains the app (default "releases")
   -u, --helm-repo-url string            The Helm Repository URL to use for the App (default "http://jenkins-x-chartmuseum:8080")
   -n, --namespace string                The Namespace to promote to
@@ -35,6 +37,7 @@ jx promote [application]
   -p, --preview                         Whether to create a new Preview environment for the app
       --pull-request-poll-time string   Poll time when waiting for a Pull Request to merge (default "20s")
   -t, --timeout string                  The timeout to wait for the promotion to succeed in the underlying Environment. The command fails if the timeout is exceeded or the promotion does not complete
+      --verbose                         Enable verbose logging
   -v, --version string                  The Version to promote
 ```
 

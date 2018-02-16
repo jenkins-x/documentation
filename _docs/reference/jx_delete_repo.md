@@ -29,12 +29,12 @@ jx delete repo
 ### Options
 
 ```
-      --all               If selecting projects to import from a git provider this defaults to selecting them all
-      --filter string     If selecting projects to import from a git provider this filters the list of repositories
-  -g, --git-host string   The Git server host if not using GitHub
-      --github            If you wis to pick the repositories from GitHub to import
-  -n, --name string       Specify the git repository name to import the project into (if it is not already in one)
-  -o, --org string        Specify the git provider organisation to import the project into (if it is not already in one)
+      --all                If selecting projects to import from a git provider this defaults to selecting them all
+      --filter string      If selecting projects to import from a git provider this filters the list of repositories
+  -g, --git-host string    The Git server host if not using GitHub
+      --github             If you wis to pick the repositories from GitHub to import
+  -n, --name stringArray   Specify the git repository names to delete
+  -o, --org string         Specify the git provider organisation that includes the repository to delete
 ```
 
 ### SEE ALSO
