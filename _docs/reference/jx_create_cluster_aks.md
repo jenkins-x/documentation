@@ -36,7 +36,7 @@ jx create cluster aks
       --git-provider-url string         The git server URL to create new git repositories inside (default "github.com")
       --git-username string             The git username to use for creating new git repositories
       --https                           Instructs Jenkins X to generate https not http Ingress rules
-      --local-cloud-environment         Ignores cloud-environment-repo default and uses current directory  (default true)
+      --local-cloud-environment         Ignores default cloud-environment-repo and uses current directory 
       --local-helm-repo-name string     The name of the helm repository for the installed Chart Museum (default "releases")
   -l, --location string                 location to run cluster in (default "eastus")
       --namespace string                The namespace the Jenkins X platform should be installed into (default "jx")

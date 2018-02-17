@@ -35,7 +35,7 @@ jx install [flags]
       --git-username string             The git username to use for creating new git repositories
       --headless                        Enable headless operation if using browser automation
       --https                           Instructs Jenkins X to generate https not http Ingress rules
-      --local-cloud-environment         Ignores cloud-environment-repo default and uses current directory  (default true)
+      --local-cloud-environment         Ignores default cloud-environment-repo and uses current directory 
       --local-helm-repo-name string     The name of the helm repository for the installed Chart Museum (default "releases")
       --namespace string                The namespace the Jenkins X platform should be installed into (default "jx")
       --provider string                 Cloud service providing the kubernetes cluster.  Supported providers: [minikube,gke,aks]
