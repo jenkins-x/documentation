@@ -32,10 +32,11 @@ jx create cluster aks
   -c, --clusterName string              Name of the cluster
       --default-environments            Creates default Staging and Production environments (default true)
       --domain string                   Domain to expose ingress endpoints.  Example: jenkinsx.io
+      --exposer string                  Used to describe which strategy exposecontroller should use to access applications (default "Ingress")
       --git-api-token string            The git API token to use for creating new git repositories
       --git-provider-url string         The git server URL to create new git repositories inside (default "github.com")
       --git-username string             The git username to use for creating new git repositories
-      --https                           Instructs Jenkins X to generate https not http Ingress rules
+      --http                            Toggle creating http or https ingress rules (default true)
       --local-cloud-environment         Ignores default cloud-environment-repo and uses current directory 
       --local-helm-repo-name string     The name of the helm repository for the installed Chart Museum (default "releases")
   -l, --location string                 location to run cluster in (default "eastus")
@@ -45,6 +46,7 @@ jx create cluster aks
       --provider string                 Cloud service providing the kubernetes cluster.  Supported providers: [minikube,gke,aks]
   -n, --resource group name string      Name of the resource group
       --timeout string                  The number of seconds to wait for the helm install to complete (default "6000")
+      --tls-acme                        Used to enable automatic TLS for ingress
 ```
 
 ### SEE ALSO

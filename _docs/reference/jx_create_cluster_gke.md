@@ -33,11 +33,12 @@ jx create cluster gke
   -d, --disk-size string                Size in GB for node VM boot disks. Defaults to 100GB
       --domain string                   Domain to expose ingress endpoints.  Example: jenkinsx.io
       --enable-autoupgrade              Sets autoupgrade feature for a cluster's default node-pool(s)
+      --exposer string                  Used to describe which strategy exposecontroller should use to access applications (default "Ingress")
       --git-api-token string            The git API token to use for creating new git repositories
       --git-provider-url string         The git server URL to create new git repositories inside (default "github.com")
       --git-username string             The git username to use for creating new git repositories
       --headless                        Enable headless operation if using browser automation
-      --https                           Instructs Jenkins X to generate https not http Ingress rules
+      --http                            Toggle creating http or https ingress rules (default true)
       --local-cloud-environment         Ignores default cloud-environment-repo and uses current directory 
       --local-helm-repo-name string     The name of the helm repository for the installed Chart Museum (default "releases")
   -m, --machine-type string             The type of machine to use for nodes
@@ -48,6 +49,7 @@ jx create cluster gke
       --provider string                 Cloud service providing the kubernetes cluster.  Supported providers: [minikube,gke,aks]
       --skip-login                      Skip Google auth if already logged in via gloud auth
       --timeout string                  The number of seconds to wait for the helm install to complete (default "6000")
+      --tls-acme                        Used to enable automatic TLS for ingress
       --verbose                         Enable verbose logging
   -z, --zone string                     The compute zone (e.g. us-central1-a) for the cluster
 ```

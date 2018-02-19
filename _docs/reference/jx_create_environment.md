@@ -27,19 +27,23 @@ jx create environment
 
 ```
   -c, --cluster string               The Kubernetes cluster for the Environment. If blank and a namespace is specified assumes the current cluster
+      --domain string                Domain to expose ingress endpoints.  Example: jenkinsx.io
       --env-job-credentials string   The Jenkins credentials used by the GitOps Job for this environment
+      --exposer string               Used to describe which strategy exposecontroller should use to access applications (default "Ingress")
   -f, --fork-git-repo string         The Git repository used as the fork when creating new Environment git repos (default "https://github.com/jenkins-x/default-environment-charts.git")
       --git-api-token string         The git API token to use for creating new git repositories
       --git-provider-url string      The git server URL to create new git repositories inside (default "github.com")
   -r, --git-ref string               The Git repo reference for the source code for GitOps based Environments
   -g, --git-url string               The Git clone URL for the source code for GitOps based Environments
       --git-username string          The git username to use for creating new git repositories
+      --http                         Toggle creating http or https ingress rules (default true)
   -l, --label string                 The Environment label which is a descriptive string like 'Production' or 'Staging'
   -n, --name string                  The Environment resource name. Must follow the kubernetes name conventions like Services, Namespaces
   -s, --namespace string             The Kubernetes namespace for the Environment
   -x, --no-gitops                    Disables the use of GitOps on the environment so that promotion is implemented by directly modifying the resources via helm instead of using a git repository
   -o, --order int32                  The order weighting of the Environment so that they can be sorted by this order before name (default 100)
   -p, --promotion string             The promotion strategy
+      --tls-acme                     Used to enable automatic TLS for ingress
 ```
 
 ### SEE ALSO
