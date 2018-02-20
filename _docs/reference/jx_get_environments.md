@@ -18,7 +18,7 @@ jx get environments
   jx get environments
   
   # List all environments using the shorter alias
-  jx get envs
+  jx get env
 ```
 
 ### Options

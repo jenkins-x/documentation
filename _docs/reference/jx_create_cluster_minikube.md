@@ -27,11 +27,13 @@ jx create cluster minikube
   -c, --cpu string                      Number of CPUs allocated to the minikube VM (default "3")
       --default-environments            Creates default Staging and Production environments (default true)
       --domain string                   Domain to expose ingress endpoints.  Example: jenkinsx.io
+      --draft-client-only               Only install draft client
       --exposer string                  Used to describe which strategy exposecontroller should use to access applications (default "Ingress")
       --git-api-token string            The git API token to use for creating new git repositories
       --git-provider-url string         The git server URL to create new git repositories inside (default "github.com")
       --git-username string             The git username to use for creating new git repositories
       --headless                        Enable headless operation if using browser automation
+      --helm-client-only                Only install helm client
       --http                            Toggle creating http or https ingress rules (default true)
   -v, --hyperv-virtual-switch string    Additional options for using HyperV with minikube
       --local-cloud-environment         Ignores default cloud-environment-repo and uses current directory 
@@ -39,7 +41,6 @@ jx create cluster minikube
   -m, --memory string                   Amount of RAM allocated to the minikube VM in MB (default "4096")
       --namespace string                The namespace the Jenkins X platform should be installed into (default "jx")
       --no-brew                         Disables the use of brew on MacOS to install dependencies like kubectl, draft, helm etc
-      --provider string                 Cloud service providing the kubernetes cluster.  Supported providers: [minikube,gke,aks]
       --timeout string                  The number of seconds to wait for the helm install to complete (default "6000")
       --tls-acme                        Used to enable automatic TLS for ingress
       --verbose                         Enable verbose logging

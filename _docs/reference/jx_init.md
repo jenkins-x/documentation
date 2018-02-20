@@ -21,7 +21,7 @@ jx init
 
 ```
   -b, --batch-mode          In batch mode the command never prompts for user input
-  -d, --domain string       Domain to expose ingress endpoints.  Example: jenkinsx.io
+      --domain string       Domain to expose ingress endpoints.  Example: jenkinsx.io
       --draft-client-only   Only install draft client
       --headless            Enable headless operation if using browser automation
       --helm-client-only    Only install helm client

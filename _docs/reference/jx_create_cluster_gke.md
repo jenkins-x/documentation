@@ -32,13 +32,16 @@ jx create cluster gke
       --default-environments            Creates default Staging and Production environments (default true)
   -d, --disk-size string                Size in GB for node VM boot disks. Defaults to 100GB
       --domain string                   Domain to expose ingress endpoints.  Example: jenkinsx.io
+      --draft-client-only               Only install draft client
       --enable-autoupgrade              Sets autoupgrade feature for a cluster's default node-pool(s)
       --exposer string                  Used to describe which strategy exposecontroller should use to access applications (default "Ingress")
       --git-api-token string            The git API token to use for creating new git repositories
       --git-provider-url string         The git server URL to create new git repositories inside (default "github.com")
       --git-username string             The git username to use for creating new git repositories
       --headless                        Enable headless operation if using browser automation
+      --helm-client-only                Only install helm client
       --http                            Toggle creating http or https ingress rules (default true)
+      --labels string                   The labels to add to the cluster being created such as 'foo=bar,whatnot=123'. Label names must begin with a lowercase character ([a-z]), end with a lowercase alphanumeric ([a-z0-9]) with dashes (-), and lowercase alphanumeric ([a-z0-9]) between.
       --local-cloud-environment         Ignores default cloud-environment-repo and uses current directory 
       --local-helm-repo-name string     The name of the helm repository for the installed Chart Museum (default "releases")
   -m, --machine-type string             The type of machine to use for nodes
@@ -46,7 +49,6 @@ jx create cluster gke
       --no-brew                         Disables the use of brew on MacOS to install dependencies like kubectl, draft, helm etc
       --num-nodes string                The number of nodes to be created in each of the cluster's zones
   -p, --project-id string               Google Project ID to create cluster in
-      --provider string                 Cloud service providing the kubernetes cluster.  Supported providers: [minikube,gke,aks]
       --skip-login                      Skip Google auth if already logged in via gloud auth
       --timeout string                  The number of seconds to wait for the helm install to complete (default "6000")
       --tls-acme                        Used to enable automatic TLS for ingress
