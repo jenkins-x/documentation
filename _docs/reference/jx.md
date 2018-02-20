@@ -29,6 +29,7 @@ jx
 * [jx metrics](jx_metrics.md)	 - Gets the metrics of the latest pod for a deployment
 * [jx namespace](jx_namespace.md)	 - View or change the current namespace context in the current kubernetes cluster
 * [jx open](jx_open.md)	 - Open a service in a browser
+* [jx preview](jx_preview.md)	 - Creates or updates a Preview Environment for the current version of an application
 * [jx promote](jx_promote.md)	 - Promotes a version of an application to an environment
 * [jx prompt](jx_prompt.md)	 - Generate the command line prompt for the current team and environment
 * [jx rsh](jx_rsh.md)	 - Opens a terminal in a pod or runs a command in the pod

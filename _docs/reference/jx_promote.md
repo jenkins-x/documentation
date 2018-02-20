@@ -5,7 +5,7 @@ Promotes a version of an application to an environment
 ### Synopsis
 
 
-Promotes a version of an application to an environment.
+Promotes a version of an application to zero to many permanent environments.
 
 ```
 jx promote [application]
@@ -20,6 +20,9 @@ jx promote [application]
   
   # Promote a version of the myapp application to production
   jx promote myapp --version 1.2.3 --env prod
+  
+  # To create or update a Preview Environment please see the 'jx preview' command
+  jx preview
 ```
 
 ### Options
@@ -34,8 +37,8 @@ jx promote [application]
   -u, --helm-repo-url string            The Helm Repository URL to use for the App (default "http://jenkins-x-chartmuseum:8080")
   -n, --namespace string                The Namespace to promote to
       --no-helm-update                  Allows the 'helm repo update' command if you are sure your local helm cache is up to date with the version you wish to promote
-  -p, --preview                         Whether to create a new Preview environment for the app
       --pull-request-poll-time string   Poll time when waiting for a Pull Request to merge (default "20s")
+      --release string                  The name of the helm release
   -t, --timeout string                  The timeout to wait for the promotion to succeed in the underlying Environment. The command fails if the timeout is exceeded or the promotion does not complete
       --verbose                         Enable verbose logging
   -v, --version string                  The Version to promote
