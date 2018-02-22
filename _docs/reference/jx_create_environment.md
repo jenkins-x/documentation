@@ -42,6 +42,7 @@ jx create environment
   -s, --namespace string             The Kubernetes namespace for the Environment
   -x, --no-gitops                    Disables the use of GitOps on the environment so that promotion is implemented by directly modifying the resources via helm instead of using a git repository
   -o, --order int32                  The order weighting of the Environment so that they can be sorted by this order before name (default 100)
+      --prefix string                Environment repo prefix, your git repo will be of the form 'environment-$prefix-$envName' (default "jx")
   -p, --promotion string             The promotion strategy
       --tls-acme                     Used to enable automatic TLS for ingress
 ```

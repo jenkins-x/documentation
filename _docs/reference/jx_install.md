@@ -26,23 +26,24 @@ jx install [flags]
 ### Options
 
 ```
-  -b, --batch-mode                      In batch mode the command never prompts for user input
-      --cloud-environment-repo string   Cloud Environments git repo (default "https://github.com/jenkins-x/cloud-environments")
-      --default-environments            Creates default Staging and Production environments (default true)
-      --domain string                   Domain to expose ingress endpoints.  Example: jenkinsx.io
-      --exposer string                  Used to describe which strategy exposecontroller should use to access applications (default "Ingress")
-      --git-api-token string            The git API token to use for creating new git repositories
-      --git-provider-url string         The git server URL to create new git repositories inside (default "github.com")
-      --git-username string             The git username to use for creating new git repositories
-      --headless                        Enable headless operation if using browser automation
-      --http                            Toggle creating http or https ingress rules (default true)
-      --local-cloud-environment         Ignores default cloud-environment-repo and uses current directory 
-      --local-helm-repo-name string     The name of the helm repository for the installed Chart Museum (default "releases")
-      --namespace string                The namespace the Jenkins X platform should be installed into (default "jx")
-      --provider string                 Cloud service providing the kubernetes cluster.  Supported providers: [minikube,gke,aks]
-      --timeout string                  The number of seconds to wait for the helm install to complete (default "6000")
-      --tls-acme                        Used to enable automatic TLS for ingress
-      --verbose                         Enable verbose logging
+  -b, --batch-mode                          In batch mode the command never prompts for user input
+      --cloud-environment-repo string       Cloud Environments git repo (default "https://github.com/jenkins-x/cloud-environments")
+      --default-environment-prefix string   Default environment repo prefix, your git repos will be of the form 'environment-$prefix-$envName'
+      --default-environments                Creates default Staging and Production environments (default true)
+      --domain string                       Domain to expose ingress endpoints.  Example: jenkinsx.io
+      --exposer string                      Used to describe which strategy exposecontroller should use to access applications (default "Ingress")
+      --git-api-token string                The git API token to use for creating new git repositories
+      --git-provider-url string             The git server URL to create new git repositories inside (default "github.com")
+      --git-username string                 The git username to use for creating new git repositories
+      --headless                            Enable headless operation if using browser automation
+      --http                                Toggle creating http or https ingress rules (default true)
+      --local-cloud-environment             Ignores default cloud-environment-repo and uses current directory 
+      --local-helm-repo-name string         The name of the helm repository for the installed Chart Museum (default "releases")
+      --namespace string                    The namespace the Jenkins X platform should be installed into (default "jx")
+      --provider string                     Cloud service providing the kubernetes cluster.  Supported providers: [minikube,gke,aks]
+      --timeout string                      The number of seconds to wait for the helm install to complete (default "6000")
+      --tls-acme                            Used to enable automatic TLS for ingress
+      --verbose                             Enable verbose logging
 ```
 
 ### SEE ALSO
