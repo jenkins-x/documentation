@@ -42,13 +42,15 @@ jx create cluster aks
       --http                                Toggle creating http or https ingress rules (default true)
       --local-cloud-environment             Ignores default cloud-environment-repo and uses current directory 
       --local-helm-repo-name string         The name of the helm repository for the installed Chart Museum (default "releases")
-  -l, --location string                     location to run cluster in (default "eastus")
+  -l, --location string                     location to run cluster in
       --namespace string                    The namespace the Jenkins X platform should be installed into (default "jx")
       --no-brew                             Disables the use of brew on MacOS to install dependencies like kubectl, draft, helm etc
-  -o, --nodes string                        node count (default "1")
+  -o, --nodes string                        node count
+  -p, --password string                     password
   -n, --resource group name string          Name of the resource group
       --timeout string                      The number of seconds to wait for the helm install to complete (default "6000")
       --tls-acme                            Used to enable automatic TLS for ingress
+  -u, --user name string                    user name
 ```
 
 ### SEE ALSO
