@@ -1,5 +1,5 @@
 ---
-date: 2018-02-26T18:53:49Z
+date: 2018-02-26T23:27:06Z
 title: "jx create cluster aks"
 slug: jx_create_cluster_aks
 url: /commands/jx_create_cluster_aks/
@@ -35,6 +35,7 @@ jx create cluster aks [flags]
   -k, --PathToPublicRSAKey string           pathToPublicRSAKey
       --cloud-environment-repo string       Cloud Environments git repo (default "https://github.com/jenkins-x/cloud-environments")
   -c, --clusterName string                  Name of the cluster
+      --default-admin-password string       the default admin password to access Jenkins, Kubernetes Dashboard, Chartmuseum and Nexus
       --default-environment-prefix string   Default environment repo prefix, your git repos will be of the form 'environment-$prefix-$envName'
       --default-environments                Creates default Staging and Production environments (default true)
       --domain string                       Domain to expose ingress endpoints.  Example: jenkinsx.io

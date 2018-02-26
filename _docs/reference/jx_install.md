@@ -1,5 +1,5 @@
 ---
-date: 2018-02-26T18:53:49Z
+date: 2018-02-26T23:27:06Z
 title: "jx install"
 slug: jx_install
 url: /commands/jx_install/
@@ -33,6 +33,7 @@ jx install [flags]
 ```
   -b, --batch-mode                          In batch mode the command never prompts for user input
       --cloud-environment-repo string       Cloud Environments git repo (default "https://github.com/jenkins-x/cloud-environments")
+      --default-admin-password string       the default admin password to access Jenkins, Kubernetes Dashboard, Chartmuseum and Nexus
       --default-environment-prefix string   Default environment repo prefix, your git repos will be of the form 'environment-$prefix-$envName'
       --default-environments                Creates default Staging and Production environments (default true)
       --domain string                       Domain to expose ingress endpoints.  Example: jenkinsx.io
