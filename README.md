@@ -1,4 +1,6 @@
-# Jenkins X Documentation
+# DEPRECATED!!!
+
+** PLEASE SEE https://github.com/jenkins-x/jx-docs **
 
 ## Develop
 
