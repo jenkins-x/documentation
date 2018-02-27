@@ -1,5 +1,5 @@
 ---
-date: 2018-02-27T06:55:33Z
+date: 2018-02-27T13:20:43Z
 title: "jx create cluster gke"
 slug: jx_create_cluster_gke
 url: /commands/jx_create_cluster_gke/
@@ -57,6 +57,7 @@ jx create cluster gke [flags]
       --no-brew                             Disables the use of brew on MacOS to install dependencies like kubectl, draft, helm etc
       --num-nodes string                    The number of nodes to be created in each of the cluster's zones
   -p, --project-id string                   Google Project ID to create cluster in
+      --register-local-helmrepo             Registers the Jenkins X chartmuseum registry with your helm client [default false]
       --skip-login                          Skip Google auth if already logged in via gloud auth
       --timeout string                      The number of seconds to wait for the helm install to complete (default "6000")
       --tls-acme                            Used to enable automatic TLS for ingress

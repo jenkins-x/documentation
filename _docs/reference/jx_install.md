@@ -1,5 +1,5 @@
 ---
-date: 2018-02-27T06:55:33Z
+date: 2018-02-27T13:20:43Z
 title: "jx install"
 slug: jx_install
 url: /commands/jx_install/
@@ -48,6 +48,7 @@ jx install [flags]
       --local-helm-repo-name string         The name of the helm repository for the installed Chart Museum (default "releases")
       --namespace string                    The namespace the Jenkins X platform should be installed into (default "jx")
       --provider string                     Cloud service providing the kubernetes cluster.  Supported providers: [minikube,gke,aks]
+      --register-local-helmrepo             Registers the Jenkins X chartmuseum registry with your helm client [default false]
       --timeout string                      The number of seconds to wait for the helm install to complete (default "6000")
       --tls-acme                            Used to enable automatic TLS for ingress
       --verbose                             Enable verbose logging
