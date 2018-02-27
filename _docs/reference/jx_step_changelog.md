@@ -1,5 +1,5 @@
 ---
-date: 2018-02-27T14:30:10Z
+date: 2018-02-27T20:32:48Z
 title: "jx step changelog"
 slug: jx_step_changelog
 url: /commands/jx_step_changelog/
@@ -34,6 +34,8 @@ jx step changelog [flags]
       --release-yaml-file string   the name of the file to generate the Release YAML (default "release.yaml")
   -r, --rev string                 the current tag revision
   -t, --templates-dir string       the directory containing the helm chart templates to generate the resources
+      --update-release             Should we update the release on the git repository with the changelog (default true)
+  -v, --version string             The version to release
 ```
 
 ### SEE ALSO
