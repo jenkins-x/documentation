@@ -1,5 +1,5 @@
 ---
-date: 2018-02-28T16:52:43Z
+date: 2018-02-28T20:25:53Z
 title: "jx install"
 slug: jx_install
 url: /commands/jx_install/
@@ -32,6 +32,7 @@ jx install [flags]
 
 ```
   -b, --batch-mode                          In batch mode the command never prompts for user input
+      --cleanup-temp-files                  Cleans up any temporary values.yaml used by helm install [default true] (default true)
       --cloud-environment-repo string       Cloud Environments git repo (default "https://github.com/jenkins-x/cloud-environments")
       --default-admin-password string       the default admin password to access Jenkins, Kubernetes Dashboard, Chartmuseum and Nexus
       --default-environment-prefix string   Default environment repo prefix, your git repos will be of the form 'environment-$prefix-$envName'
@@ -44,6 +45,7 @@ jx install [flags]
       --headless                            Enable headless operation if using browser automation
   -h, --help                                help for install
       --http                                Toggle creating http or https ingress rules (default true)
+      --keep-exposecontroller-job           Prevents Helm deleting the exposecontroller Job and Pod after running.  Useful for debugging exposecontroller logs but you will need to manually delete the job if you update an environment
       --local-cloud-environment             Ignores default cloud-environment-repo and uses current directory 
       --local-helm-repo-name string         The name of the helm repository for the installed Chart Museum (default "releases")
       --namespace string                    The namespace the Jenkins X platform should be installed into (default "jx")

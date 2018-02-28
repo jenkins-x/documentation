@@ -1,5 +1,5 @@
 ---
-date: 2018-02-28T16:52:43Z
+date: 2018-02-28T20:25:53Z
 title: "jx preview"
 slug: jx_preview
 url: /commands/jx_preview/
@@ -35,6 +35,7 @@ jx preview [flags]
   -u, --helm-repo-url string            The Helm Repository URL to use for the App (default "http://jenkins-x-chartmuseum:8080")
   -h, --help                            help for preview
       --http                            Toggle creating http or https ingress rules (default true)
+      --keep-exposecontroller-job       Prevents Helm deleting the exposecontroller Job and Pod after running.  Useful for debugging exposecontroller logs but you will need to manually delete the job if you update an environment
   -l, --label string                    The Environment label which is a descriptive string like 'Production' or 'Staging'
   -n, --name string                     The Environment resource name. Must follow the kubernetes name conventions like Services, Namespaces
       --namespace string                The Kubernetes namespace for the Environment

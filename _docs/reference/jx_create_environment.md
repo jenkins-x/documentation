@@ -1,5 +1,5 @@
 ---
-date: 2018-02-28T16:52:43Z
+date: 2018-02-28T20:25:53Z
 title: "jx create environment"
 slug: jx_create_environment
 url: /commands/jx_create_environment/
@@ -43,6 +43,7 @@ jx create environment [flags]
       --git-username string          The git username to use for creating new git repositories
   -h, --help                         help for environment
       --http                         Toggle creating http or https ingress rules (default true)
+      --keep-exposecontroller-job    Prevents Helm deleting the exposecontroller Job and Pod after running.  Useful for debugging exposecontroller logs but you will need to manually delete the job if you update an environment
   -l, --label string                 The Environment label which is a descriptive string like 'Production' or 'Staging'
   -n, --name string                  The Environment resource name. Must follow the kubernetes name conventions like Services, Namespaces
   -s, --namespace string             The Kubernetes namespace for the Environment

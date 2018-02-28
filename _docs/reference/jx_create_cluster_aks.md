@@ -1,5 +1,5 @@
 ---
-date: 2018-02-28T16:52:43Z
+date: 2018-02-28T20:25:53Z
 title: "jx create cluster aks"
 slug: jx_create_cluster_aks
 url: /commands/jx_create_cluster_aks/
@@ -33,6 +33,7 @@ jx create cluster aks [flags]
 ```
   -v, --K8Version string                    kubernetes version (default "1.8.2")
   -k, --PathToPublicRSAKey string           pathToPublicRSAKey
+      --cleanup-temp-files                  Cleans up any temporary values.yaml used by helm install [default true] (default true)
       --cloud-environment-repo string       Cloud Environments git repo (default "https://github.com/jenkins-x/cloud-environments")
   -c, --clusterName string                  Name of the cluster
       --default-admin-password string       the default admin password to access Jenkins, Kubernetes Dashboard, Chartmuseum and Nexus
@@ -47,6 +48,7 @@ jx create cluster aks [flags]
       --helm-client-only                    Only install helm client
   -h, --help                                help for aks
       --http                                Toggle creating http or https ingress rules (default true)
+      --keep-exposecontroller-job           Prevents Helm deleting the exposecontroller Job and Pod after running.  Useful for debugging exposecontroller logs but you will need to manually delete the job if you update an environment
       --local-cloud-environment             Ignores default cloud-environment-repo and uses current directory 
       --local-helm-repo-name string         The name of the helm repository for the installed Chart Museum (default "releases")
   -l, --location string                     location to run cluster in

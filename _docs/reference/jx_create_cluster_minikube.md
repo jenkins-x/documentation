@@ -1,5 +1,5 @@
 ---
-date: 2018-02-28T16:52:43Z
+date: 2018-02-28T20:25:53Z
 title: "jx create cluster minikube"
 slug: jx_create_cluster_minikube
 url: /commands/jx_create_cluster_minikube/
@@ -28,6 +28,7 @@ jx create cluster minikube [flags]
 
 ```
   -b, --batch-mode                          In batch mode the command never prompts for user input
+      --cleanup-temp-files                  Cleans up any temporary values.yaml used by helm install [default true] (default true)
       --cloud-environment-repo string       Cloud Environments git repo (default "https://github.com/jenkins-x/cloud-environments")
   -c, --cpu string                          Number of CPUs allocated to the minikube VM (default "3")
       --default-admin-password string       the default admin password to access Jenkins, Kubernetes Dashboard, Chartmuseum and Nexus
@@ -44,6 +45,7 @@ jx create cluster minikube [flags]
   -h, --help                                help for minikube
       --http                                Toggle creating http or https ingress rules (default true)
   -v, --hyperv-virtual-switch string        Additional options for using HyperV with minikube
+      --keep-exposecontroller-job           Prevents Helm deleting the exposecontroller Job and Pod after running.  Useful for debugging exposecontroller logs but you will need to manually delete the job if you update an environment
       --local-cloud-environment             Ignores default cloud-environment-repo and uses current directory 
       --local-helm-repo-name string         The name of the helm repository for the installed Chart Museum (default "releases")
   -m, --memory string                       Amount of RAM allocated to the minikube VM in MB (default "4096")
