@@ -1,5 +1,5 @@
 ---
-date: 2018-02-28T13:20:21Z
+date: 2018-02-28T14:10:27Z
 title: "jx"
 slug: jx
 url: /commands/jx/
@@ -26,6 +26,7 @@ jx [flags]
 ### SEE ALSO
 
 * [jx addon](/commands/jx_addon/)	 - Creates an addon
+* [jx cdx](/commands/jx_cdx/)	 - Opens the CDX dashboard for visualising CI / CD and your environments
 * [jx completion](/commands/jx_completion/)	 - Output shell completion code for the given shell (bash or zsh)
 * [jx console](/commands/jx_console/)	 - Opens the Jenkins console
 * [jx context](/commands/jx_context/)	 - View or change the current kubernetes context (kubernetes cluster)
