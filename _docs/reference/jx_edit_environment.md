@@ -1,5 +1,5 @@
 ---
-date: 2018-03-01T01:29:08Z
+date: 2018-03-01T07:11:12Z
 title: "jx edit environment"
 slug: jx_edit_environment
 url: /commands/jx_edit_environment/

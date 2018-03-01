@@ -1,5 +1,5 @@
 ---
-date: 2018-03-01T01:29:08Z
+date: 2018-03-01T07:11:12Z
 title: "jx upgrade"
 slug: jx_upgrade
 url: /commands/jx_upgrade/
@@ -10,7 +10,7 @@ Upgrades a resource
 
 ### Synopsis
 
-Deletes one or many resources.
+Upgrade a the whole Jenkins-X platform.
 
 ```
 jx upgrade [flags]
@@ -19,8 +19,8 @@ jx upgrade [flags]
 ### Examples
 
 ```
-  # Delete an environment
-  jx delete env staging
+  # upgrade the platform
+  jx upgrade platform
 ```
 
 ### Options
